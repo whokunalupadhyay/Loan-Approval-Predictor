@@ -68,7 +68,7 @@ pip install -r requirements.txt
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/yourusername/Loan-Approval-Predictor.git```
+git clone https://github.com/yourusername/Loan-Approval-Predictor.git
 cd Loan-Approval-Predictor
 ```
 ### 2️⃣ Install dependencies
