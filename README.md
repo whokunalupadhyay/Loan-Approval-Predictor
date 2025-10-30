@@ -59,8 +59,9 @@ python --version
 ## 📦 Install Dependencies
 
 ### Create a virtual environment (recommended) and install the required packages:
+```bash
 pip install -r requirements.txt
-
+```
 
 
 
