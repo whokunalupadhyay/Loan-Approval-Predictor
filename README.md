@@ -66,16 +66,20 @@ pip install -r requirements.txt
 
 ##  🧭 How to Run the Entire Project
 
-# 1️⃣ Clone the repository
-```git clone https://github.com/yourusername/Loan-Approval-Predictor.git```
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/yourusername/Loan-Approval-Predictor.git```
 cd Loan-Approval-Predictor
-
-# 2️⃣ Install dependencies
+```
+### 2️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
-
-# 3️⃣ Train the model
+```
+### 3️⃣ Train the model
+```bash
 python train_model.py
-
-# 4️⃣ Run the web app
+```
+#### 4️⃣ Run the web app
+```bash
 streamlit run app.py
-
+```
