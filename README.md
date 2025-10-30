@@ -1,35 +1,81 @@
-﻿# Loan Approval Predictor
+﻿# 💰 Loan Approval Prediction System
 
-A Machine Learning project that predicts whether a loan application will be approved or not based on features like income, credit score, education, etc.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML%20Pipeline-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-##  Dataset
+A complete **Machine Learning workflow** for predicting whether a loan application will be **approved (1)** or **rejected (0)** based on applicant financial and demographic data.  
+The project includes **data preprocessing, model training, evaluation, and deployment** as a **Streamlit web app**.
 
-The dataset includes:
-- ApplicantIncome
-- LoanAmount
-- CreditScore
-- Education
-- SelfEmployed
-- LoanApproved (Target: 0 = Not Approved, 1 = Approved)
+---
 
-##  Models Used
-- Logistic Regression
-- Decision Tree Classifier
+## 🚀 Features
 
-##  Steps Followed
-- Data Cleaning & Preprocessing
-- Label Encoding of categorical data
-- Feature Scaling using StandardScaler
-- Model Training & Evaluation
-- Accuracy, Precision, Recall, F1-Score reported
+✅ **Data Pipeline:**  
+Built using `scikit-learn`’s **Pipelines** and **ColumnTransformer** for clean, modular preprocessing.  
+- Numerical: Scaling + Median Imputation  
+- Categorical: One-Hot Encoding + Most Frequent Imputation  
 
-##  Results
-- Logistic Regression Accuracy: ~50%
-- Decision Tree Accuracy: ~44%
+✅ **Model Comparison:**  
+Trains & compares:
+- Logistic Regression  
+- Decision Tree Classifier  
+- Random Forest Classifier  
+Evaluated on **F1-Score**, **AUC**, and **Confusion Matrix**.
 
-##  How to Run
+✅ **Balanced Classes:**  
+Implements `class_weight='balanced'` to improve recall on minority classes.
 
-1. Clone the repo
+✅ **Interactive Web App (Streamlit):**  
+User-friendly interface for:
+- 🔮 Real-time loan predictions  
+- 📊 Simple dashboard tracking input history & insights  
+
+✅ **Feature Influence:**  
+Displays model coefficients or feature importance for interpretability.
+
+---
+
+## 🧩 Project Structure
+
+| File | Description |
+|------|--------------|
+| `project_dataset.xlsx` | Dataset containing applicant & loan details |
+| `train_model.py` | Trains models, builds pipelines & saves the best one |
+| `app.py` | Streamlit web application |
+| `loan_prediction_pipeline.pkl` | Serialized ML pipeline (generated after training) |
+
+---
+
+## ⚙️ Setup and Installation
+
+### 🧱 Prerequisites
+Ensure you have **Python 3.8+** installed.
 ```bash
-git clone https://github.com/yourusername/Loan-Approval-Predictor.git
+python --version
+```
+
+## 📦 Install Dependencies
+
+### Create a virtual environment (recommended) and install the required packages:
+pip install -r requirements.txt
+
+
+
+
+##  🧭 How to Run the Entire Project
+
+# 1️⃣ Clone the repository
+```git clone https://github.com/yourusername/Loan-Approval-Predictor.git```
+cd Loan-Approval-Predictor
+
+# 2️⃣ Install dependencies
+pip install -r requirements.txt
+
+# 3️⃣ Train the model
+python train_model.py
+
+# 4️⃣ Run the web app
+streamlit run app.py
 
